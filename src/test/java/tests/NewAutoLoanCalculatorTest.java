@@ -26,9 +26,9 @@ public class NewAutoLoanCalculatorTest extends TestBase{
      newAutoLoanCalculatorPage.purchasePrice.clear();
      newAutoLoanCalculatorPage.purchasePrice.sendKeys("5000");
      newAutoLoanCalculatorPage.downPayment.click();
-     newAutoLoanCalculatorPage.downPayment.sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE);;
+     newAutoLoanCalculatorPage.downPayment.sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE);
      newAutoLoanCalculatorPage.downPayment.sendKeys("1000");
-     newAutoLoanCalculatorPage.tradeInValue.sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE);;
+     newAutoLoanCalculatorPage.tradeInValue.sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE);
      newAutoLoanCalculatorPage.tradeInValue.sendKeys("500");
      newAutoLoanCalculatorPage.amountOwedOnTrade.sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE);
      newAutoLoanCalculatorPage.amountOwedOnTrade.sendKeys("400");
