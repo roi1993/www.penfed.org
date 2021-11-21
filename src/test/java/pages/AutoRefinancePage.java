@@ -16,6 +16,9 @@ public class AutoRefinancePage {
     @FindBy(xpath ="(//button[@class='button button--tab'])[2]")
     public WebElement refinanceButton;
 
+    @FindBy(xpath ="//button[@class='button button--tab']")
+    public WebElement purchaseButton;
+
     @FindBy(xpath = "//a[@href='/auto/refinance']")
     public WebElement newAutoRefinanceLink;
 
