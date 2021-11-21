@@ -24,9 +24,18 @@ public class AutoLoanApplicationPage {
     @FindBy(xpath = "//a[@data-clickid='PF-BTN-CLK-AUTO-LOANS_REVIEW']")
     public WebElement AutoLoanApplication;
 
+    @FindBy(xpath = "//a[@class='pfui-button pfui-btn-tertiary-blue-outline']")
+    public  WebElement seeRatesButton;
+
 
     public void NavigateToAutoLoanPage(){
         Auto.click();
         AutoLoanApplication.click();
+    }
+
+    public void NavigateToAutoRatesPage(){
+        Auto.click();
+        AutoLoanApplication.click();
+        seeRatesButton.click();
     }
 }

@@ -19,6 +19,8 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(ConfigReader.getProperty("url"));
 
+        driver.manage().deleteAllCookies();
+
     }
 
     @AfterMethod

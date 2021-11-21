@@ -64,7 +64,9 @@ public class RefinanceNewAutoCalculatorTest extends TestBase {
         //String expected="$14";
         String actual= refinanceNewAutoCalculatorPage.differencePerMonth.getText();
 
+
         Assert.assertEquals(actual,expected);
+
 
     }
 
