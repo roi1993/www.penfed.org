@@ -58,8 +58,8 @@
                     <configuration>
                         <suiteXmlFiles>
                             <suteXmlfile>
-                                <!-- controlling which NG.xml to run   -->
-                                ${xmlFile}
+                                <!-- controlling which NG.xml to run  ${smoke_test.xml}  -->
+                                smoke_test.xml
                             </suteXmlfile>
                         </suiteXmlFiles>
                     </configuration>

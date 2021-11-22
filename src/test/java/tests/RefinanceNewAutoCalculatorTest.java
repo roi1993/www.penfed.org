@@ -24,8 +24,8 @@ public class RefinanceNewAutoCalculatorTest extends TestBase {
         Thread.sleep(3000);
         refinanceNewAutoCalculatorPage.loanAmount.sendKeys("3000");
         refinanceNewAutoCalculatorPage.buttonCompare.click();
+        Thread.sleep(3000);
         String expected="$2";
-        //String expected="$14";
         String actual= refinanceNewAutoCalculatorPage.differencePerMonth.getText();
 
         Assert.assertEquals(actual,expected);
@@ -41,8 +41,8 @@ public class RefinanceNewAutoCalculatorTest extends TestBase {
         driver.findElement(By.xpath("//button[@data-pen-category='PRIVACY']")).click();
         refinanceNewAutoCalculatorPage.refinanceCalculator.click();
         refinanceNewAutoCalculatorPage.buttonCompare.click();
+        Thread.sleep(3000);
         String expected="$16";
-        //String expected="$14";
         String actual= refinanceNewAutoCalculatorPage.differencePerMonth.getText();
 
         Assert.assertEquals(actual,expected);
@@ -60,8 +60,8 @@ public class RefinanceNewAutoCalculatorTest extends TestBase {
         Thread.sleep(3000);
         refinanceNewAutoCalculatorPage.loanAmount.sendKeys("100000");
         refinanceNewAutoCalculatorPage.buttonCompare.click();
+        Thread.sleep(3000);
         String expected="$78";
-        //String expected="$14";
         String actual= refinanceNewAutoCalculatorPage.differencePerMonth.getText();
 
 
