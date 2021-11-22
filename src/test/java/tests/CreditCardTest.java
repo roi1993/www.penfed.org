@@ -22,19 +22,19 @@ public class CreditCardTest extends TestBase {
     @Test
     public void navigateCreditCardOverview() {
         CreditCardPage cd = new CreditCardPage();
-        cd.navigateCreditCardOverviewPage();
+//        cd.navigateCreditCardOverviewPage();
+//
+//        List<String> expected = new ArrayList<>();
+//        expected.add("Power Cash Rewards Visa Signature® Card");
+//        expected.add("Gold Visa® Card");
+//        expected.add("Platinum Rewards Visa Signature® Card");
+//        expected.add("PenFed Pathfinder Rewards Visa Signature® Card");
+//
+//        String actual = cd.creditCardOverview.getText();
+//        Assert.assertEquals(actual, expected);
 
-        List<String> expected = new ArrayList<>();
-        expected.add("Power Cash Rewards Visa Signature® Card");
-        expected.add("Gold Visa® Card");
-        expected.add("Platinum Rewards Visa Signature® Card");
-        expected.add("PenFed Pathfinder Rewards Visa Signature® Card");
 
-        String actual = cd.creditCardOverview.getText();
-        Assert.assertEquals(actual, expected);
-
-
-//        cd.creditCards.sendKeys(TAB);
+        cd.creditCards.click();
 //        cd.creditCardOverview.click();
 //        cd.calculateBalanceTransfer.click();
 //        cd.amount.sendKeys(ConfigReader.getProperty("7500" + Keys.TAB));
