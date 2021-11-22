@@ -11,7 +11,7 @@ import java.time.Duration;
 public class TestBase {
     protected WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setUpMethod(){
 
         driver= Driver.getDriver();
@@ -23,10 +23,10 @@ public class TestBase {
 
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDownMethod(){
 
-       // Driver.quitDriver();
+       Driver.quitDriver();
 
     }
 }
