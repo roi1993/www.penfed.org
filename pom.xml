@@ -57,10 +57,9 @@
                     <version>3.0.0-M5</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suteXmlfile>
+                            <suteXmlfile>smoke_test.xml </suteXmlfile>
                                 <!-- controlling which NG.xml to run  ${smoke_test.xml}  -->
-                                smoke_test.xml
-                            </suteXmlfile>
+
                         </suiteXmlFiles>
                     </configuration>
 

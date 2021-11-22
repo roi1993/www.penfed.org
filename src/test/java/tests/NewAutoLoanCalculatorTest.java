@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AutoLoanApplicationPage;
+import pages.CookiesHandlingPage;
 import pages.HomePage;
 import pages.NewAutoLoanCalculatorPage;
 
@@ -46,7 +47,8 @@ public void checkDefaultValuesInCalculator() {
 
      AutoLoanApplicationPage autoLoanApplicationPage=new AutoLoanApplicationPage();
      autoLoanApplicationPage.NavigateToAutoLoanPage();
-     driver.findElement(By.xpath("//button[@data-pen-clickid='PF-BTN-CLK-GLOBAL-COOKIE-REJECT']")).click();
+     CookiesHandlingPage cookiesHandlingPage=new CookiesHandlingPage();
+     cookiesHandlingPage.click();
      NewAutoLoanCalculatorPage newAutoLoanCalculatorPage=new NewAutoLoanCalculatorPage();
      newAutoLoanCalculatorPage.calculateButton.click();
      String expectedPayments="571";
@@ -64,7 +66,8 @@ public void checkDefaultValuesInCalculator() {
      NewAutoLoanCalculatorPage newAutoLoanCalculatorPage=new NewAutoLoanCalculatorPage();
      newAutoLoanCalculatorPage.purchasePrice.clear();
      newAutoLoanCalculatorPage.purchasePrice.sendKeys("500");
-     driver.findElement(By.xpath("//button[@data-pen-clickid='PF-BTN-CLK-GLOBAL-COOKIE-REJECT']")).click();
+     CookiesHandlingPage cookiesHandlingPage=new CookiesHandlingPage();
+     cookiesHandlingPage.click();
      Thread.sleep(2000);
      newAutoLoanCalculatorPage.calculateButton.click();
      String expectedPayments="14";
@@ -81,7 +84,8 @@ public void checkDefaultValuesInCalculator() {
           NewAutoLoanCalculatorPage newAutoLoanCalculatorPage=new NewAutoLoanCalculatorPage();
           newAutoLoanCalculatorPage.purchasePrice.clear();
           newAutoLoanCalculatorPage.purchasePrice.sendKeys("999999999");
-          driver.findElement(By.xpath("//button[@data-pen-clickid='PF-BTN-CLK-GLOBAL-COOKIE-REJECT']")).click();
+          CookiesHandlingPage cookiesHandlingPage=new CookiesHandlingPage();
+          cookiesHandlingPage.click();
           Thread.sleep(2000);
           newAutoLoanCalculatorPage.calculateButton.click();
           String expectedPayments="28,550,993";

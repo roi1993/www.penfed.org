@@ -17,9 +17,9 @@ import static org.openqa.selenium.Keys.TAB;
 
 
 public class CreditCardTest extends TestBase {
-    WebDriver driver;
 
-    @Test
+
+    @Test(groups={"regressionTest"})
     public void navigateCreditCardOverview() {
         CreditCardPage cd = new CreditCardPage();
         cd.navigateCreditCardOverviewPage();
@@ -33,7 +33,7 @@ public class CreditCardTest extends TestBase {
         String actual = cd.creditCardOverview.getText();
         Assert.assertEquals(actual, expected);
 
-
+    }
 //        cd.creditCards.sendKeys(TAB);
 //        cd.creditCardOverview.click();
 //        cd.calculateBalanceTransfer.click();
@@ -61,5 +61,5 @@ public class CreditCardTest extends TestBase {
 
     }
 
-}
+
 
