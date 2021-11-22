@@ -35,6 +35,10 @@ public class FindNewCarPage {
     @FindBy(xpath = "//button//span[@class='btn-inner']")
     public WebElement carBuyingServiceMainPageShopNewCarButton;
 
+    @FindBy(xpath = "//div//a[@class='button button--solid-primary No Value button--center  ']")
+    public WebElement searchVehicleButton;
+
+
 
 }
 

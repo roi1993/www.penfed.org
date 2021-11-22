@@ -5,7 +5,7 @@ import pages.AutoLoanApplicationPage;
 import pages.AutoRefinancePage;
 import pages.PurchasePage;
 
-public class PusrchaseTest extends TestBase {
+public class PurchaseTest extends TestBase {
 
     @Test(groups = {"regressionTest"})
     public void checkPurchaseRatesforNewCarBuyingServise() {
