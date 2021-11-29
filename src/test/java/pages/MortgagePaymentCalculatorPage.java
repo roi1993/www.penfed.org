@@ -32,6 +32,9 @@ public class MortgagePaymentCalculatorPage {
     @FindBy(xpath = "//div//span[@class='dkblue']")
     public WebElement result;
 
+   @FindBy(xpath = "//div//canvas[@id='PITIChart']")
+    public WebElement partialInfoResult;
+
 
 
 

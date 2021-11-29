@@ -38,7 +38,7 @@ public class MortgagePaymentCalculatorTest extends TestBase{
         cookiesHandlingPage.click();
         MortgagePaymentCalculatorPage mortgagePaymentCalculatorPage = new MortgagePaymentCalculatorPage();
 //        mortgagePaymentCalculatorPage.MortPayCal.click();
-//        mortgagePaymentCalculatorPage.priceOfTheHomeOfMortPayCal.sendKeys("450000");
+        mortgagePaymentCalculatorPage.priceOfTheHomeOfMortPayCal.sendKeys("450000");
         mortgagePaymentCalculatorPage.downPaymentOfMortPayCal.sendKeys("15000");
         Select loanTerm = new Select(mortgagePaymentCalculatorPage.loanTermOfMortPayCal);
         loanTerm.selectByValue("180");
