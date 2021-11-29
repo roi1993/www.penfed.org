@@ -14,10 +14,10 @@ public class StudentLoanTypesPage {
     @FindBy(linkText = "SEE COSIGNED & NON-COSIGNED LOANS")
     public WebElement UndergraduateLoan;
 
-    @FindBy(linkText = "Graduate Student Loans")
+    @FindBy(linkText = "SEE LOAN OPTIONS")
     public WebElement GraduateLoan;
 
-    @FindBy(linkText = "No Essay Scholarships")
+    @FindBy(linkText = "SEE SCHOLARSHIPS")
     public WebElement NoEssayScholarships;
 
 }

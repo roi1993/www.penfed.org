@@ -65,7 +65,7 @@ public class TestBase {
 //            logger.addScreenCaptureFromPath(SeleniumUtils.getScreenshot());
 //        }
 
-        Driver.quitDriver();
+        //Driver.quitDriver();
 
     }
 }
